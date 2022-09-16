@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage ('cloning the code ') {
+            steps {
+               checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/radhikamada/chandh12.git']]]) 
+            }
+        }
+        stage('builging the code') {
+            steps {
+                sh 'sh monitor.sh'
+            }
+        }
+    }
+}
