@@ -14,5 +14,5 @@ cont=$(cat file_sys_usage.txt | wc -l)
 if [ $cont -gt 0 ]
 then
    echo " some file system is exceded is more than thresold"
-   echo -e "Subject:Alert \n\n $(cat file_sys_usage.txt) \n" | sendmail "gaddamedirakesh01@gmail.com"
+   echo -e "Subject:Alert \n\n $(cat file_sys_usage.txt) \n" | sendmail "gaddamedirakesh1@gmail.com"
 fi   
