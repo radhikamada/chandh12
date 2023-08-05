@@ -6,7 +6,7 @@ pipeline {
             echo "clone code"
         }
     }
-      stage('building the code by using maven') {
+      stage('building the code by using maven file') {
           steps {
               echo "builging code "
           }
